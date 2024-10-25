@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chart Data Access Log Form</title>
+</head>
+<body>
+<h1>Chart Data Access Log Form</h1>
+<form id="log-form">
+<label for="username">User Name:</label>
+<input type="text" id="username" name="username"></br>
+
+
+<label for="userid">User ID:</label>
+<input type="text" id="userid" name="userid"></br>
+
+
+<label for="date-range">Date Range:</label>
+<input type="date" id="start-date" name="start-date">
+<input type="date" id="end-date" name="end-date"></br>
+
+
+<label for="access-purpose">Access Purpose:</label>
+<select id="access-purpose" name="access-purpose">
+<option value="research">Research</option>
+<option value="analysis">Analysis</option>
+<option value="reporting">Reporting</option>
+<option value="other">Other</option></br>
+</select>
+
+
+<label for="additional-notes">Additional Notes:</label>
+<textarea id="additional-notes" name="additional-notes"></textarea>
+
+
+<button type="submit">Submit</button>
+<script src="data.js"></script>
+</form>
+</body>
+</html>

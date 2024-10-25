@@ -1,0 +1,35 @@
+swagger: "2.0"
+info:
+  title: Chart Data API
+  description: API for fetching chart data
+  version: 1.0.0
+host: localhost:3000
+basePath: /
+schemes:
+  - http
+paths:
+  /chart-data:
+    get:
+      summary: Fetch chart data
+      description: Returns all chart data documents
+      responses:
+        200:
+          description: Chart data returned successfully
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ChartData'
+        500:
+          description: Error fetching chart data
+definitions:
+  ChartData:
+    type: object
+    properties:
+      _id:
+        type: string
+      date:
+        type: string
+      value:
+        type: number
+
+
